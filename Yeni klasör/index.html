@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TilkiNetwork - Minecraft Sunucu</title>
+<style>
+  body {
+    margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #1e1e2f; color: #eee;
+    display: flex; flex-direction: column; align-items: center; min-height: 100vh;
+  }
+  header {
+    background: #ff6f61; width: 100%; padding: 1rem 0; text-align: center;
+    font-size: 2rem; font-weight: bold; letter-spacing: 2px;
+  }
+  main {
+    flex: 1; max-width: 700px; width: 90%; padding: 2rem;
+    text-align: center; 
+  }
+  h2 { margin-bottom: 0.5rem; }
+  .ip {
+    font-size: 1.3rem; color: #ffcc00;
+    margin-bottom: 1rem;
+    user-select: all;
+  }
+  .btn {
+    display: inline-block;
+    background: #ff6f61; color: white;
+    padding: 0.8rem 1.5rem; margin: 0.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  .btn:hover {
+    background: #ff4b3d;
+  }
+  footer {
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #999;
+  }
+  @media (max-width: 600px) {
+    header { font-size: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+<header>TilkiNetwork</header>
+<main>
+  <h2>Sunucu IP Adresi</h2>
+  <div class="ip" title="Kopyalamak için tıkla">tilkinw.mcsv.com.tr</div>
+  <a href="https://your-tebex-link.com" target="_blank" class="btn">VIP Satın Al</a>
+  <a href="https://topg.org/minecraft" target="_blank" class="btn">Oy Ver</a>
+  <a href="https://discord.gg/your-discord-link" target="_blank" class="btn">Discord'a Katıl</a>
+</main>
+<footer>© 2025 TilkiNetwork | Tüm hakları saklıdır</footer>
+
+<script>
+// IP kopyalama fonksiyonu
+document.querySelector('.ip').addEventListener('click', () => {
+  navigator.clipboard.writeText('tilkinw.mcsv.com.tr').then(() => {
+    alert('IP adresi kopyalandı!');
+  });
+});
+</script>
+</body>
+</html>
